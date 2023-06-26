@@ -8,7 +8,7 @@ let a = 10,
     d = 'Spiderman', 
     x = a + b;  
 
-const saludo = c + d
+const saludo = c + d;
 
 //  console.log('%c Mis variables', 'color:red; font-weight: bold')
 //  console.log({a})
@@ -16,8 +16,8 @@ const saludo = c + d
 //  console.log({c})
 //  console.log({d})
 
-c = "Hola de nuevo"
+c = "Hola de nuevo";
 
 //  console.table({ a, b, c, d, x})
  
-  
+var miNombre = "gatoguapo";
