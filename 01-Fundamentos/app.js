@@ -1,6 +1,6 @@
 //  console.log(console.log("Hola mundo"));
 
-alert('Hola desde app.js')
+// alert('Hola desde app.js')
 
 let a = 10, 
     b = 20, 
