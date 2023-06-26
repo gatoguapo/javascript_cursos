@@ -6,7 +6,8 @@ let a = 10,
     d = 40, 
     x = a + b;  
 
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(d)
+console.log('%c Mis variables', 'color:red; font-weight: bold')
+console.log({a})
+console.log({b})
+console.log({c})
+console.log({d})
