@@ -1,2 +1,5 @@
+alert('Hola mundo')
 
-console.log(miNombre);
+let nombre = prompt('Cual es tu nombre?', 'Sin nombre')
+
+const seleccion = confirm("Estas seguro de borrar esto?")
