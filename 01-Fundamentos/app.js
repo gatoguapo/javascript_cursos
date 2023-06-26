@@ -2,9 +2,11 @@
 
 let a = 10, 
     b = 20, 
-    c = 'Hola', 
+    c = 'Hola ', 
     d = 'Spiderman', 
     x = a + b;  
+
+const saludo = c + d
 
 // console.log('%c Mis variables', 'color:red; font-weight: bold')
 // console.log({a})
@@ -12,4 +14,5 @@ let a = 10,
 // console.log({c})
 // console.log({d})
 
-console.table({ a, b, c, d, x})
+// console.table({ a, b, c, d, x})
+
