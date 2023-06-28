@@ -21,3 +21,6 @@ console.log(elementoBorrado, juegos)
 let pos = 1
 let juegosBorrados = juegos.splice(pos, 2)
 console.log(juegosBorrados, juegos)
+
+let metroidIndex = juegos.indexOf('Metroid')
+console.log(metroidIndex, juegos)
