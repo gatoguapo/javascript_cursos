@@ -12,8 +12,19 @@ function imprimeArgumentos() {
 
 const imprimeArgumentos2 = (edad, ...args) => (args)
 
+let listaPersona = [
+    {nombre: '', vivo: true, casado: false, saludo: ''} 
+]
+
 const [casado, vivo, nombre, saludo] = imprimeArgumentos2(10, true, false, 'Ramirez', 'Hola')
 console.log({casado, vivo, nombre, saludo})
+
+listaPersona[0].nombre = nombre
+listaPersona[0].vivo = vivo
+listaPersona[0].casado = casado
+listaPersona[0].saludo = saludo
+
+console.log(listaPersona[0])
 
 const {apellido: nuevoApellido} = crearPersona("Oscar", "Ramirez")
 console.log({nuevoApellido})
