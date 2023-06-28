@@ -25,3 +25,6 @@ console.log('Ultimo traje', personaje.trajes[personaje.trajes.length-1])
 
 const x = 'vivo';
 console.log('Vivo', personaje[x])
+
+delete personaje.edad
+console.log('Edad', personaje.edad)
