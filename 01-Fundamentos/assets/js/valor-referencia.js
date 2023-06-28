@@ -18,3 +18,18 @@ let peter = {nombre: 'Peter'}
 let tony = cambiaNombre(peter)
 
 console.log(peter, tony)
+
+//arreglos
+
+const frutas = ['manzana', 'pera', 'piña']
+
+console.time('slice')
+const otrasFrutas = frutas.slice()
+console.timeEnd('slice')
+
+console.time('spread')
+const otrasFrutas2 = [...frutas]
+console.timeEnd('spread')
+
+otrasFrutas.push('mango')
+console.table({frutas, otrasFrutas})
