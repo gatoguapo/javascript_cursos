@@ -1,0 +1,3 @@
+
+let constante = 123;
+
