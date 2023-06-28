@@ -38,4 +38,5 @@ delete personaje.vivo
 console.log(personaje)
 
 const propiedades = Object.getOwnPropertyNames(personaje)
-console.log(propiedades)
+const valores = Object.values(personaje)
+console.log({propiedades, valores})
