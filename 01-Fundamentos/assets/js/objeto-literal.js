@@ -28,3 +28,6 @@ console.log('Vivo', personaje[x])
 
 delete personaje.edad
 console.log('Edad', personaje.edad)
+
+const entriesPares = Object.entries(personaje)
+console.log(entriesPares)
