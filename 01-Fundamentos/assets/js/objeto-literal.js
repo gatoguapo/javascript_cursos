@@ -36,3 +36,6 @@ Object.freeze(personaje)
 personaje.dinero = 10000000
 delete personaje.vivo
 console.log(personaje)
+
+const propiedades = Object.getOwnPropertyNames(personaje)
+console.log(propiedades)
