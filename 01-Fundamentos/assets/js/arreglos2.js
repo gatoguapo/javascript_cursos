@@ -1,0 +1,11 @@
+let juegos = ['Zelda', 'Mario', 'Metroid', 'Chrono Trigger'];
+console.log(juegos.length);
+
+let primero = juegos[0];
+let ultimo = juegos[juegos.length-1];
+
+console.log(primero, ultimo);
+
+juegos.forEach((juego,indice,arr)=> {
+    console.log({juego,indice,arr})
+});
