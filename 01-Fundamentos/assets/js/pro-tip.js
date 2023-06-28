@@ -17,3 +17,21 @@ console.log({casado, vivo, nombre, saludo})
 
 const {apellido: nuevoApellido} = crearPersona("Oscar", "Ramirez")
 console.log({nuevoApellido})
+
+let tony = {
+    nombre: 'Tony Stark',
+    codeName: 'Iron Man',
+    vivo: false,
+    edad: 40,
+    trajes: ['Mark I', 'Mark V', 'Hulk Buster'],
+}
+
+const imprimePropiedades = ({nombre, codeName, vivo, edad, trajes}) => {
+    console.log({nombre})
+    console.log({codeName})
+    console.log({vivo})
+    console.log({edad})
+    console.log({trajes})
+}
+
+imprimePropiedades(tony)
