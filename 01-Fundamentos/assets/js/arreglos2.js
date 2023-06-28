@@ -17,3 +17,7 @@ console.log(nuevaLong, juegos);
 
 let elementoBorrado = juegos.pop();
 console.log(elementoBorrado, juegos)
+
+let pos = 1
+let juegosBorrados = juegos.splice(pos, 2)
+console.log(juegosBorrados, juegos)
