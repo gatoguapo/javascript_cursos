@@ -24,5 +24,10 @@ const sumar = (a, b) => {
 
 const sumar2 = (a, b) => a + b
 
+function getAleatorio() {
+    return Math.random();
+}
+
 console.log(sumar(10,15))
 console.log(sumar2(5,50))
+console.log(getAleatorio())
