@@ -28,6 +28,9 @@ function getAleatorio() {
     return Math.random();
 }
 
+const getAleatorio2 = () => Math.random()
+
 console.log(sumar(10,15))
 console.log(sumar2(5,50))
 console.log(getAleatorio())
+console.log(getAleatorio2())
