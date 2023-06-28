@@ -9,3 +9,7 @@ console.log(primero, ultimo);
 juegos.forEach((juego,indice,arr)=> {
     console.log({juego,indice,arr})
 });
+
+let nuevaLong = juegos.push('F-Zero');
+
+console.log(nuevaLong, juegos)
