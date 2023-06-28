@@ -31,3 +31,8 @@ console.log('Edad', personaje.edad)
 
 const entriesPares = Object.entries(personaje)
 console.log(entriesPares)
+
+Object.freeze(personaje)
+personaje.dinero = 10000000
+delete personaje.vivo
+console.log(personaje)
