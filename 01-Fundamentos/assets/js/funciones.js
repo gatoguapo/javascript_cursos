@@ -1,7 +1,7 @@
 function saludar(nombre) {
     console.log('Hola '+nombre)
     console.log(arguments)
-    return 10
+    return [1,2,3,4,5]
 }
 
 const saludar2 = function(nombre) {
@@ -14,5 +14,6 @@ const saludarFlecha = (nombre) => {
 
 const retornoDeSaludar = saludar('Ramirez', 40, true, 'Costa Rica');
 console.log({retornoDeSaludar})
-saludar2('Jorge')
-saludarFlecha('ESPARZA')
+
+// saludar2('Jorge')
+// saludarFlecha('ESPARZA')
