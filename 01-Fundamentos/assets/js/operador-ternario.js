@@ -4,13 +4,14 @@
  */
 
 // Entra a un sitio web, para consultar si esta abierto hoy
-const dia = 0
-const horaActual = 10
+const dia = 6
+const horaActual = 11
 
 let horaApertura
 let mensaje
 
-if (dia === 0 || dia === 6) {
+//if (dia === 0 || dia === 6) {
+if ( [0,6].includes(dia)) {
     console.log('Fin de semana')
     horaApertura = 9
 } else {
