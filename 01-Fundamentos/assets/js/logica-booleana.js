@@ -12,5 +12,7 @@ console.warn('Not o la negacion')
 console.log(true)
 console.log(!true) //false
 console.log(!false) //true
+console.log('!null ', !null) //true
+console.log('!undefined ', !undefined) //true
 
 console.log(!regresaFalse())
