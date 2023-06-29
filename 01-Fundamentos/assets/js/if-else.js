@@ -40,5 +40,5 @@ const diasLetras = {
 } 
 
 const diaNombre = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
-console.log(diaNombre[dia] )
-console.log(diasLetras[dia]() )
+console.log(diaNombre[dia] || 'Dia no definido')
+console.log(diasLetras[dia]() || 'Dia no definido')
