@@ -30,3 +30,14 @@ console.warn('Or') //true
 console.log(true || false)
 console.log(false || false)
 console.log(regresaTrue() || regresaFalse())
+
+console.warn('Asignaciones')
+
+const soyUndefined = undefined
+const soyNull = null
+const soyFalse = false
+
+const a1 = true && 'Hola mundo' && 150
+const a2 = 'Hola' && 'Mundo' && soyFalse && true
+
+console.log({a1, a2})
