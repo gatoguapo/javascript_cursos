@@ -27,18 +27,18 @@ let dia = hoy.getDay()
 // } else if (dia === 6) {
 //     console.log('Sabado')
 // }
-dia = 1
+dia = 5
 
 const diasLetras = {
-    0: 'Domingo',
-    1: 'Lunes',
-    2: 'Martes',
-    3: 'Miercoles',
-    4: 'Jueves',
-    5: 'Viernes',
-    6: 'Sabado'
+    0: () => 'Domingo - 0',
+    1: () => 'Lunes - 1',
+    2: () => 'Martes - 2',
+    3: () => 'Miercoles - 3',
+    4: () => 'Jueves - 4',
+    5: () => 'Viernes - 5 ',
+    6: () => 'Sabado - 6'
 } 
 
 const diaNombre = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
-console.log(diaNombre[dia])
-console.log(diasLetras[dia])
+console.log(diaNombre[dia] )
+console.log(diasLetras[dia]() )
