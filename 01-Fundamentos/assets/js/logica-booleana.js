@@ -16,3 +16,11 @@ console.log('!null ', !null) //true
 console.log('!undefined ', !undefined) //true
 
 console.log(!regresaFalse())
+
+console.warn('And')
+console.log(true && true) //true
+console.log(true && false) //false
+console.log("----------------------")
+console.log(regresaFalse() && regresaTrue()) //false
+console.log(regresaTrue() && regresaFalse()) //false
+console.log(!regresaFalse() && regresaTrue()) //true
