@@ -4,4 +4,4 @@
 
 // const seleccion = confirm("Estas seguro de borrar esto?")
 
-// console.log(global)
+// console.log(global) 
