@@ -35,7 +35,5 @@ const grado2 = (nota >= 95) ? 'A+':
                (nota >= 80) ? 'B': 
                (nota >= 75) ? 'C+': 
                (nota >= 70) ? 'C' : 'F'
-    
-
 
 console.log(nota, grado(nota))
