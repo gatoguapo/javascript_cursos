@@ -12,5 +12,5 @@ for(i in heroes) {
 
 console.warn('For of')
 for(heroe of heroes) {
-    console.log(heroe)
+    console.log(heroe) 
 }
