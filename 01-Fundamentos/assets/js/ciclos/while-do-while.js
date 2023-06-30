@@ -7,11 +7,18 @@ let i = 0
 //     i++
 // }
 
-while (autos[i]) {
-    if (i === 1) {
-        i++
-        continue
-    }
-    console.log(autos[i])
-    i++
-}
+// while (autos[i]) {
+//     if (i === 1) {
+//         i++
+//         continue
+//     }
+//     console.log(autos[i])
+//     i++
+// } 
+
+console.warn('Do while') 
+let j =0
+do {
+    console.log(autos[j])
+    j++
+} while (autos[j]);
