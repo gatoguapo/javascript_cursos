@@ -1,5 +1,7 @@
 html, body {
-    
+    margin: 0px;
+    background-color: #345428;
+    color: white;
 }
 
 .title{
