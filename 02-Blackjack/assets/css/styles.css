@@ -13,8 +13,12 @@ html, body {
 }
 
 .card {
-    position: relative;
+    position: fixed;
     width: 150px;
     left: 100px;
     margin-left: -75px;
+}
+
+#computer-cards, #player-cards {
+    height: 240px;
 }
