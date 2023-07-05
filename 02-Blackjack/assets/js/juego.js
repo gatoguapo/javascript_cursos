@@ -20,11 +20,14 @@ const createDeck = () => {
 }
 
 const hit = () => {
-    const card = deck[deck.length-1]
-    deck.pop()
+    if (deck.length === 0) {
+        throw 'No hay cartas en el deck'
+    }
+    const card = deck.pop()
     return card
 }
 
 console.log(createDeck())
+deck = []
 console.log(hit())
 console.log(deck)
