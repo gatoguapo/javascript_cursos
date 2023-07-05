@@ -15,9 +15,7 @@ const createDeck = () => {
         }
     }
 
-    deck = _.shuffle(deck)
+    return _.shuffle(deck)
 }
 
-createDeck()
-
-console.log(deck)
+console.log(createDeck())
