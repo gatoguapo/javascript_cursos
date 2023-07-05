@@ -15,7 +15,7 @@ const createDeck = () => {
         }
     }
 
-    
+    deck = _.shuffle(deck)
 }
 
 createDeck()
