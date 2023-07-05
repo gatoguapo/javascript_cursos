@@ -30,14 +30,12 @@ const hit = () => {
 const cardValue = (card) => {
     const value = card.substring(0, card.length-1)
     if (isNaN(value)) {
-        return (value === 'A') ? 11 : 10 
-    } else {
-        return (value * 1)
+        return (value === 'A') ? 11 : 10
     }
+    return (value * 1)
 } 
 
 console.log(createDeck())
-console.log(hit())
-console.log(cardValue('QS'))
+console.log(cardValue(hit()))
 
 console.log(deck)
