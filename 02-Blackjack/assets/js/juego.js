@@ -27,7 +27,13 @@ const hit = () => {
     return card
 }
 
+const cardValue = (card) => {
+    const value = card.substring(0, card.length-1)
+    
+} 
+
 console.log(createDeck())
-deck = []
 console.log(hit())
+console.log(cardValue('QS'))
+
 console.log(deck)
