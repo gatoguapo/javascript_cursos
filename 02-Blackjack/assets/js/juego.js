@@ -15,7 +15,16 @@ const createDeck = () => {
         }
     }
 
-    return _.shuffle(deck)
+    deck = _.shuffle(deck)
+    return deck
+}
+
+const hit = () => {
+    const card = deck[deck.length-1]
+    deck.pop()
+    return card
 }
 
 console.log(createDeck())
+console.log(hit())
+console.log(deck)
