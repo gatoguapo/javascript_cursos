@@ -29,7 +29,11 @@ const hit = () => {
 
 const cardValue = (card) => {
     const value = card.substring(0, card.length-1)
-    
+    if (isNaN(value)) {
+        return (value === 'A') ? 11 : 10 
+    } else {
+        return (value * 1)
+    }
 } 
 
 console.log(createDeck())
