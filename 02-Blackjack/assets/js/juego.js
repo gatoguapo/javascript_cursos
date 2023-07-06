@@ -2,6 +2,9 @@ let deck = []
 const types = ['C', 'D', 'H', 'S'] 
 const others = ['A', 'J', 'Q', 'K']
 
+//References
+const btnHit = document.querySelector('#btnHit')
+
 const createDeck = () => {
     for (i = 2; i<=10; i++) {
         for (type in types) {
@@ -35,4 +38,3 @@ const cardValue = (card) => {
     return (value * 1)
 } 
 
-hitCard = hit()
