@@ -38,7 +38,10 @@ const cardValue = (card) => {
     return (value * 1)
 } 
 
+createDeck()
+
 //Events
 btnHit.addEventListener('click', () => {
-
+    const card = hit()
+    console.log(card)
 })
