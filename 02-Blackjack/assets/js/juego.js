@@ -36,6 +36,6 @@ const cardValue = (card) => {
 } 
 
 console.log(createDeck())
-console.log(cardValue(hit()))
-
+hitCard = hit()
+console.log(cardValue(hitCard))
 console.log(deck)
