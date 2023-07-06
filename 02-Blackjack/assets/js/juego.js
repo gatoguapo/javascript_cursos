@@ -35,7 +35,4 @@ const cardValue = (card) => {
     return (value * 1)
 } 
 
-console.log(createDeck())
 hitCard = hit()
-console.log(cardValue(hitCard))
-console.log(deck)
