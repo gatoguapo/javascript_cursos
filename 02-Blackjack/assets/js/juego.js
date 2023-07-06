@@ -3,6 +3,8 @@ let deck = []
 const types = ['C', 'D', 'H', 'S'] 
 const others = ['A', 'J', 'Q', 'K']
 
+let playerScore = 0
+let computerScore = 0
 //References
 const btnHit = document.querySelector('#btnHit')
 
