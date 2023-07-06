@@ -39,3 +39,6 @@ const cardValue = (card) => {
 } 
 
 //Events
+btnHit.addEventListener('click', () => {
+
+})
