@@ -56,6 +56,10 @@ btnHit.addEventListener('click', () => {
     imgCard.className = 'card'
 
     divPlayerCards.append(imgCard)
-    console.log(playerScore)
-
+    if (playerScore > 21) {
+        alert('You lost')
+        btnHit.disabled = true
+    } else if (playerScore === 21) {
+        alert("You've won")
+    }
 })
