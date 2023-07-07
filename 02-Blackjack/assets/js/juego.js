@@ -50,6 +50,12 @@ btnHit.addEventListener('click', () => {
     playerScore = playerScore + cardValue(card)
 
     smalls[0].innerText = playerScore
+
+    const imgCard = document.createElement('img')
+    imgCard.src = `assets/cartas/${card}.png`
+    imgCard.className = 'card'
+
+    divPlayerCards.append(imgCard)
     console.log(playerScore)
 
 })
