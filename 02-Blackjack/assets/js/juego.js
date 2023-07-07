@@ -7,7 +7,7 @@ let playerScore = 0
 let computerScore = 0
 //References
 const btnHit = document.querySelector('#btnHit')
-
+const divPlayerCards = document.querySelector('#player-cards')
 let smalls = document.querySelectorAll('small')
 //Functions
 const createDeck = () => {
