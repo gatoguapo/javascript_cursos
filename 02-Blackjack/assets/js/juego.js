@@ -8,6 +8,7 @@ let computerScore = 0
 //References
 const btnHit = document.querySelector('#btnHit')
 
+let smalls = document.querySelectorAll('small')
 //Functions
 const createDeck = () => {
     for (i = 2; i<=10; i++) {
@@ -48,5 +49,7 @@ btnHit.addEventListener('click', () => {
 
     playerScore = playerScore + cardValue(card)
 
+    
     console.log(playerScore)
+
 })
