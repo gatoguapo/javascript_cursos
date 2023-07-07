@@ -8,6 +8,7 @@ let computerScore = 0
 //References
 const btnHit = document.querySelector('#btnHit')
 const divPlayerCards = document.querySelector('#player-cards')
+const divComputerCards = document.querySelector('#computer-cards')
 let smalls = document.querySelectorAll('small')
 //Functions
 const createDeck = () => {
@@ -40,6 +41,10 @@ const cardValue = (card) => {
     }
     return (value * 1)
 } 
+
+const computerTurn = ( playerPoints ) => {
+   
+}
 
 createDeck()
 
