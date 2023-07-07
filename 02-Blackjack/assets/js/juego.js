@@ -49,7 +49,7 @@ btnHit.addEventListener('click', () => {
 
     playerScore = playerScore + cardValue(card)
 
-    
+    smalls[0].innerText = playerScore
     console.log(playerScore)
 
 })
