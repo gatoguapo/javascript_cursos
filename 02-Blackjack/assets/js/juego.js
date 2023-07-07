@@ -45,5 +45,8 @@ createDeck()
 //Events
 btnHit.addEventListener('click', () => {
     const card = hit()
-    console.log(card)
+
+    playerScore = playerScore + cardValue(card)
+
+    console.log(playerScore)
 })
