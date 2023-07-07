@@ -43,7 +43,21 @@ const cardValue = (card) => {
 } 
 
 const computerTurn = ( playerPoints ) => {
-   
+    do {
+        const card = hit()
+
+        computerScore = computerScore + cardValue(card)
+    
+        smalls[1].innerText = computerScore
+    
+        const imgCard = document.createElement('img')
+        imgCard.src = `assets/cartas/${card}.png`
+        imgCard.className = 'card'
+        divComputerCards.append(imgCard)
+        if(playerScore > 21) {
+            break
+        }
+    } while ( (computerScore < playerPoints) && (playerPoints <= 21))
 }
 
 createDeck()
