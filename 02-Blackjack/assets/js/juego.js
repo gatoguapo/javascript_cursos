@@ -8,6 +8,8 @@ let computerScore = 0
 //References
 const btnHit = document.querySelector('#btnHit')
 const btnStop = document.querySelector('#btnStop')
+const btnNewGame = document.querySelector('#btnNewGame')
+
 const divPlayerCards = document.querySelector('#player-cards')
 const divComputerCards = document.querySelector('#computer-cards')
 let smalls = document.querySelectorAll('small')
