@@ -112,5 +112,18 @@ btnStop.addEventListener('click', () => {
 })
 
 btnNewGame.addEventListener('click', () => {
+    deck = []
+    createDeck()
 
+    btnHit.disabled = false
+    btnStop.disabled = false
+
+    divPlayerCards.innerHTML = ''
+    divComputerCards.innerHTML = ''
+
+    playerScore = 0
+    computerScore = 0
+    
+    smalls[0].innerText = '0'
+    smalls[1].innerText = '0'
 })
