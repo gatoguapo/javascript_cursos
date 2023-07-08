@@ -78,8 +78,11 @@ btnHit.addEventListener('click', () => {
     divPlayerCards.append(imgCard)
     if (playerScore > 21) {
         btnHit.disabled = true
+        btnStop.disabled = true
         computerTurn(playerScore)
     } else if (playerScore === 21) {
+        btnHit.disabled = true
+        btnStop.disabled = true
         computerTurn(playerScore)
     }
 })
