@@ -111,6 +111,6 @@ btnStop.addEventListener('click', () => {
     }, 10)
 })
 
-btnNewGame.addEventListener('clik', () => {
-    
+btnNewGame.addEventListener('click', () => {
+
 })
