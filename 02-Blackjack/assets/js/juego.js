@@ -55,10 +55,17 @@ const computerTurn = ( playerPoints ) => {
         imgCard.src = `assets/cartas/${card}.png`
         imgCard.className = 'card'
         divComputerCards.append(imgCard)
-        if(playerScore > 21) {
+        if(playerPoints > 21) {
             break
         }
     } while ( (computerScore < playerPoints) && (playerPoints <= 21))
+    if (playerScore <= 21 && (computerScore > 21)) {
+        alert("You've won!")
+    } else if (playerScore === 21 && computerScore === 21) {
+        alert("There are no winners")
+    } else if (playerScore > 21) {
+        alert('Computer won')
+    }
 }
 
 createDeck()
@@ -91,4 +98,11 @@ btnStop.addEventListener('click', () => {
     btnHit.disabled = true
     btnStop.disabled = true
     computerTurn(playerScore)
+    if ((computerScore > 21)) {
+        alert("You've won!")
+    } else if (computerScore > playerScore && computerScore < 21) {
+        alert('Computer won')
+    } else if (playerScore === computerScore) {
+        alert("There are no winners")
+    }
 })
