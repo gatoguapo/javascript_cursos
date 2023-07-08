@@ -59,13 +59,15 @@ const computerTurn = ( playerPoints ) => {
             break
         }
     } while ( (computerScore < playerPoints) && (playerPoints <= 21))
-    if (playerScore <= 21 && (computerScore > 21)) {
-        alert("You've won!")
-    } else if (playerScore === 21 && computerScore === 21) {
-        alert("There are no winners")
-    } else if (playerScore > 21) {
-        alert('Computer won')
-    }
+    setTimeout(() => {
+        if (playerScore <= 21 && (computerScore > 21)) {
+            alert("You've won!")
+        } else if (playerScore === 21 && computerScore === 21) {
+            alert("There are no winners")
+        } else if (playerScore > 21) {
+            alert('Computer won')
+        }
+    }, 10)
 }
 
 createDeck()
@@ -98,11 +100,11 @@ btnStop.addEventListener('click', () => {
     btnHit.disabled = true
     btnStop.disabled = true
     computerTurn(playerScore)
-    if ((computerScore > 21)) {
-        alert("You've won!")
-    } else if (computerScore > playerScore && computerScore < 21) {
-        alert('Computer won')
-    } else if (playerScore === computerScore) {
-        alert("There are no winners")
-    }
+    setTimeout(() => {
+        if (computerScore > playerScore && computerScore <= 21) {
+            alert('Computer won')
+        } else if (playerScore === computerScore) {
+            alert("There are no winners")
+        }
+    }, 10)
 })
