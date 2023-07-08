@@ -83,3 +83,9 @@ btnHit.addEventListener('click', () => {
         computerTurn(playerScore)
     }
 })
+
+btnStop.addEventListener('click', () => {
+    btnHit.disabled = true
+    btnStop.disabled = true
+    computerTurn(playerScore)
+})
