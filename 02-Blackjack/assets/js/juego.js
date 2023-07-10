@@ -1,3 +1,7 @@
+(() => {
+
+})()
+
 //Variables
 let deck = []
 const types = ['C', 'D', 'H', 'S'] 
