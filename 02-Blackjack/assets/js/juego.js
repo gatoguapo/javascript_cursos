@@ -7,8 +7,9 @@
     const types  = ['C', 'D', 'H', 'S'], 
           others = ['A', 'J', 'Q', 'K'];
 
-    let playerScore = 0
-    let computerScore = 0
+    // let playerScore = 0
+    // let computerScore = 0
+    let playersPoints = []
 
     //References
     const btnHit = document.querySelector('#btnHit'),
@@ -54,6 +55,10 @@
         }
         return (value * 1)
     } 
+
+    const gatherPoints = () => {
+
+    }
 
     const computerTurn = ( playerPoints ) => {
         do {
