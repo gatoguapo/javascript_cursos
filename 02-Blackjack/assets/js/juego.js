@@ -36,6 +36,10 @@
         return _.shuffle(deck)
     }
 
+    const initializeGame = () => {
+
+    }
+
     const hit = () => {
         if (deck.length === 0) {
             throw 'No hay cartas en el deck'
