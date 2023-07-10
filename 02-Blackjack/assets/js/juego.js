@@ -22,8 +22,11 @@
     let smalls = document.querySelectorAll('small')
 
     //Functions
-    const initializeGame = () => {
+    const initializeGame = (playersNum = 2) => {
         deck = createDeck()
+        for (let i=0; i<playersNum;i++) {
+            playersPoints.push(0)
+        }
     }
     
     const createDeck = () => {
