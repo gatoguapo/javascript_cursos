@@ -1,5 +1,6 @@
 (() => {
-
+    const characters = ['Ana', 'Mercy', 'Mei']
+    console.log(characters)
 })()
 
 //Variables
