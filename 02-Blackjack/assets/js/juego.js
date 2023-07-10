@@ -1,7 +1,7 @@
 //
 (() => {
     'use strict'
-    
+
     //Variables
     let deck = []
     const types  = ['C', 'D', 'H', 'S'], 
@@ -22,6 +22,7 @@
 
     //Functions
     const createDeck = () => {
+        deck = []
         for (let i = 2; i<=10; i++) {
             for (let type in types) {
                 deck.push( i + types[type])
@@ -32,8 +33,7 @@
                 deck.push( others[other] + types[type])
             }
         }
-        deck = _.shuffle(deck)
-        return deck
+        return _.shuffle(deck)
     }
 
     const hit = () => {
