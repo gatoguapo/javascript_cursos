@@ -21,6 +21,10 @@
     let smalls = document.querySelectorAll('small')
 
     //Functions
+    const initializeGame = () => {
+        createDeck()
+    }
+    
     const createDeck = () => {
         deck = []
         for (let i = 2; i<=10; i++) {
@@ -36,16 +40,11 @@
         return _.shuffle(deck)
     }
 
-    const initializeGame = () => {
-
-    }
-
     const hit = () => {
         if (deck.length === 0) {
             throw 'No hay cartas en el deck'
         }
-        const card = deck.pop()
-        return card
+        return deck.pop()
     }
 
     const cardValue = (card) => {
@@ -82,8 +81,6 @@
             }
         }, 10)
     }
-
-    createDeck()
 
     //Events
     btnHit.addEventListener('click', () => {
