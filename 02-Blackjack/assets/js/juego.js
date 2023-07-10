@@ -1,5 +1,7 @@
 (() => {
-    const characters = ['Ana', 'Mercy', 'Mei']
+    'use strict'
+
+    characters = ['Ana', 'Mercy', 'Mei']
     console.log(characters)
 })()
 
