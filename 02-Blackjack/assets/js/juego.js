@@ -22,7 +22,7 @@
 
     //Functions
     const initializeGame = () => {
-        createDeck()
+        deck = createDeck()
     }
     
     const createDeck = () => {
@@ -120,8 +120,9 @@
     })
 
     btnNewGame.addEventListener('click', () => {
-        deck = []
-        createDeck()
+        initializeGame()
+        //deck = []
+        //createDeck()
 
         btnHit.disabled = false
         btnStop.disabled = false
