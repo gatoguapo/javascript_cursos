@@ -1,21 +1,25 @@
 //
 (() => {
     'use strict'
+    
     //Variables
     let deck = []
-    const types = ['C', 'D', 'H', 'S'] 
-    const others = ['A', 'J', 'Q', 'K']
+    const types  = ['C', 'D', 'H', 'S'], 
+          others = ['A', 'J', 'Q', 'K'];
 
     let playerScore = 0
     let computerScore = 0
-    //References
-    const btnHit = document.querySelector('#btnHit')
-    const btnStop = document.querySelector('#btnStop')
-    const btnNewGame = document.querySelector('#btnNewGame')
 
-    const divPlayerCards = document.querySelector('#player-cards')
-    const divComputerCards = document.querySelector('#computer-cards')
+    //References
+    const btnHit = document.querySelector('#btnHit'),
+          btnStop = document.querySelector('#btnStop'),
+          btnNewGame = document.querySelector('#btnNewGame');
+
+    const divPlayerCards = document.querySelector('#player-cards'),
+          divComputerCards = document.querySelector('#computer-cards');
+
     let smalls = document.querySelectorAll('small')
+
     //Functions
     const createDeck = () => {
         for (let i = 2; i<=10; i++) {
@@ -130,5 +134,5 @@
         smalls[0].innerText = '0'
         smalls[1].innerText = '0'
     })
-    
+
 })()
