@@ -16,10 +16,8 @@
           btnStop = document.querySelector('#btnStop'),
           btnNewGame = document.querySelector('#btnNewGame');
 
-    const divPlayerCards = document.querySelector('#player-cards'),
-          divComputerCards = document.querySelector('#computer-cards');
-
-    let smalls = document.querySelectorAll('small')
+    let smalls = document.querySelectorAll('small'),
+    divCardsPlayer = document.querySelectorAll('.divCards');
 
     //Functions
     const initializeGame = (playersNum = 2) => {
