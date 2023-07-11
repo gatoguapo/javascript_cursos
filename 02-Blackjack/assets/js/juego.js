@@ -62,15 +62,15 @@
     const gatherPoints = (card, turn) => {
         playersPoints[turn] = playersPoints[turn] + cardValue(card)
         smalls[turn].innerText = playersPoints[turn]
+
+        return playersPoints[turn]
     }
 
     const computerTurn = ( playerPoints ) => {
         do {
             const card = hit()
 
-            computerScore = computerScore + cardValue(card)
-        
-            smalls[1].innerText = computerScore
+            gatherPoints(card, playersPoints.length-1)
         
             const imgCard = document.createElement('img')
             imgCard.src = `assets/cartas/${card}.png`
@@ -95,9 +95,7 @@
     btnHit.addEventListener('click', () => {
         const card = hit()
 
-        playerScore = playerScore + cardValue(card)
-
-        smalls[0].innerText = playerScore
+        const playerScore = gatherPoints(card, 0)
 
         const imgCard = document.createElement('img')
         imgCard.src = `assets/cartas/${card}.png`
@@ -139,8 +137,8 @@
         divPlayerCards.innerHTML = ''
         divComputerCards.innerHTML = ''
 
-        playerScore = 0
-        computerScore = 0
+        // playerScore = 0
+        // computerScore = 0
 
         smalls[0].innerText = '0'
         smalls[1].innerText = '0'
