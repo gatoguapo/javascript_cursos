@@ -59,8 +59,9 @@
         return (value * 1)
     } 
 
-    const gatherPoints = () => {
-
+    const gatherPoints = (card, turn) => {
+        playersPoints[turn] = playersPoints[turn] + cardValue(card)
+        smalls[turn].innerText = playersPoints[turn]
     }
 
     const computerTurn = ( playerPoints ) => {
