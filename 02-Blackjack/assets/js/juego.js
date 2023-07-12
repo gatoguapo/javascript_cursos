@@ -7,8 +7,6 @@
     const types  = ['C', 'D', 'H', 'S'], 
           others = ['A', 'J', 'Q', 'K'];
 
-    // let playerScore = 0
-    // let computerScore = 0
     let playersPoints = []
 
     //References
@@ -64,16 +62,20 @@
         return playersPoints[turn]
     }
 
+    const createCard = (card, div) => {
+        const imgCard = document.createElement('img')
+        imgCard.src = `assets/cartas/${card}.png`
+        imgCard.className = 'card'
+        divCardsPlayer[div].append(imgCard)
+    }
+
     const computerTurn = ( playerPoints ) => {
         do {
             const card = hit()
 
             gatherPoints(card, playersPoints.length-1)
-        
-            const imgCard = document.createElement('img')
-            imgCard.src = `assets/cartas/${card}.png`
-            imgCard.className = 'card'
-            divComputerCards.append(imgCard)
+            createCard(card, playersPoints.length-1)
+            
             if(playerPoints > 21) {
                 break
             }
