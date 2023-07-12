@@ -20,9 +20,16 @@
     //Functions
     const initializeGame = (playersNum = 2) => {
         deck = createDeck()
+        playersPoints = []
         for (let i=0; i<playersNum;i++) {
             playersPoints.push(0)
         }
+
+        smalls.forEach(elem => elem.innerText = '0')
+        divCardsPlayer.forEach(elem => elem.innerHTML = '')
+
+        btnHit.disabled = false
+        btnStop.disabled = false
     }
     
     const createDeck = () => {
@@ -130,20 +137,6 @@
 
     btnNewGame.addEventListener('click', () => {
         initializeGame()
-        //deck = []
-        //createDeck()
-
-        btnHit.disabled = false
-        btnStop.disabled = false
-
-        // divPlayerCards.innerHTML = ''
-        // divComputerCards.innerHTML = ''
-
-        // playerScore = 0
-        // computerScore = 0
-
-        smalls[0].innerText = '0'
-        smalls[1].innerText = '0'
     })
 
 })()
