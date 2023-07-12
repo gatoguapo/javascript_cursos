@@ -94,7 +94,7 @@
                 break
             }
         } while ( (computerScore < playerPoints) && (playerPoints <= 21))
-        
+        getWinner()
     }
 
     //Events
