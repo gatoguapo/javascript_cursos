@@ -1,5 +1,5 @@
 //
-(() => {
+const myModule = (() => {
     'use strict'
 
     //Variables
@@ -138,5 +138,9 @@
     btnNewGame.addEventListener('click', () => {
         initializeGame()
     })
+
+    return {
+        newGame: initializeGame
+    }
 
 })()
