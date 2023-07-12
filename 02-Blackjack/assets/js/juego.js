@@ -81,8 +81,10 @@ const myModule = (() => {
         setTimeout(() => {
             if (playerPoints <= 21 && (computerScore > 21)) {
                 alert("You've won!")
-            } else if (playerPoints === 21 && computerScore === 21) {
+            } else if (playerPoints === computerScore) {
                 alert("There are no winners")
+            } else if (computerScore > playerPoints && computerScore <= 21) {
+                alert('Computer won')
             } else if (playerPoints > 21) {
                 alert('Computer won')
             }
@@ -125,14 +127,8 @@ const myModule = (() => {
     btnStop.addEventListener('click', () => {
         btnHit.disabled = true
         btnStop.disabled = true
+        const [playerScore, computerScore] = playersPoints
         computerTurn(playerScore)
-        setTimeout(() => {
-            if (computerScore > playerScore && computerScore <= 21) {
-                alert('Computer won')
-            } else if (playerScore === computerScore) {
-                alert("There are no winners")
-            }
-        }, 10)
     })
 
     btnNewGame.addEventListener('click', () => {
