@@ -70,10 +70,11 @@
     }
 
     const computerTurn = ( playerPoints ) => {
+        let computerScore = 0
         do {
             const card = hit()
 
-            gatherPoints(card, playersPoints.length-1)
+            computerScore = gatherPoints(card, playersPoints.length-1)
             createCard(card, playersPoints.length-1)
             
             if(playerPoints > 21) {
@@ -81,11 +82,11 @@
             }
         } while ( (computerScore < playerPoints) && (playerPoints <= 21))
         setTimeout(() => {
-            if (playerScore <= 21 && (computerScore > 21)) {
+            if (playerPoints <= 21 && (computerScore > 21)) {
                 alert("You've won!")
-            } else if (playerScore === 21 && computerScore === 21) {
+            } else if (playerPoints === 21 && computerScore === 21) {
                 alert("There are no winners")
-            } else if (playerScore > 21) {
+            } else if (playerPoints > 21) {
                 alert('Computer won')
             }
         }, 10)
@@ -96,12 +97,8 @@
         const card = hit()
 
         const playerScore = gatherPoints(card, 0)
+        createCard(card, 0)
 
-        const imgCard = document.createElement('img')
-        imgCard.src = `assets/cartas/${card}.png`
-        imgCard.className = 'card'
-
-        divPlayerCards.append(imgCard)
         if (playerScore > 21) {
             btnHit.disabled = true
             btnStop.disabled = true
@@ -134,8 +131,8 @@
         btnHit.disabled = false
         btnStop.disabled = false
 
-        divPlayerCards.innerHTML = ''
-        divComputerCards.innerHTML = ''
+        // divPlayerCards.innerHTML = ''
+        // divComputerCards.innerHTML = ''
 
         // playerScore = 0
         // computerScore = 0
