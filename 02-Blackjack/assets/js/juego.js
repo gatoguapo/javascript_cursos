@@ -69,6 +69,19 @@
         divCardsPlayer[div].append(imgCard)
     }
 
+    const getWinner = () => {
+        const [playerPoints, computerScore] = playersPoints
+        setTimeout(() => {
+            if (playerPoints <= 21 && (computerScore > 21)) {
+                alert("You've won!")
+            } else if (playerPoints === 21 && computerScore === 21) {
+                alert("There are no winners")
+            } else if (playerPoints > 21) {
+                alert('Computer won')
+            }
+        }, 10)
+    }
+
     const computerTurn = ( playerPoints ) => {
         let computerScore = 0
         do {
@@ -81,15 +94,7 @@
                 break
             }
         } while ( (computerScore < playerPoints) && (playerPoints <= 21))
-        setTimeout(() => {
-            if (playerPoints <= 21 && (computerScore > 21)) {
-                alert("You've won!")
-            } else if (playerPoints === 21 && computerScore === 21) {
-                alert("There are no winners")
-            } else if (playerPoints > 21) {
-                alert('Computer won')
-            }
-        }, 10)
+        
     }
 
     //Events
